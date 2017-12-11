@@ -19,6 +19,15 @@ class UIRadar extends UIElement
   
   void render()
   {
+    
+    for(Enemy e:enemys)
+    {
+      float rx = map(e.x,width/10,width-width/10, x-radius+25,x+radius-25);
+      float ry = map(e.y,height-height/3.5,height/2.5, y+radius-25, y-radius+25);
+      noStroke();
+      fill(Color, 100);
+      ellipse(rx,ry, 10,10);
+    }
     int trailLength = 200;
     stroke(Color);
     noFill();

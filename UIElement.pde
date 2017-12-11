@@ -18,4 +18,9 @@ class UIElement
   {
     
   }
+  
+  void use()
+  {
+    
+  }
 }
