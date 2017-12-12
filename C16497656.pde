@@ -225,10 +225,10 @@ void draw()
       text("Score: " + score,width/2,height/2.5);
       line(0,height/2,width, height/2);
       textSize(50);
-      text("Press space to try again",width/2, height-height/2.5);
+      text("Press s to try again",width/2, height-height/2.5);
       if(keyPressed)
       {
-        if(key == ' ')
+        if(key == 's')
         {
           mode = 2;
           health = 100;
